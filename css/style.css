@@ -209,8 +209,7 @@ h1 {
     margin: 0;
     transform: translate3d(0, 0, 0);
     position: fixed;
-    top: 5%;
-    left: 15%;
+    left: 50%;
 }
 
 .horizontal_adjust {
