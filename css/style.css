@@ -1,0 +1,499 @@
+/* head */
+
+/* body */
+
+.skip {
+    position: absolute;
+    top: -200px;
+    left: -400px;
+}
+
+.skip:focus {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+button {
+    border: none;
+    background-color: white;
+    text-align: right;
+    font-size: 40px;
+    position: relative;
+}
+
+h1 {
+    font-family: "Delicious Handrawn", serif;
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 80px;
+    color: #013F45;
+}
+
+.grid {
+    margin: 0 auto 7em;
+    position: relative;
+    padding: 0 1em;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding: 0 4vw;
+    margin: 0 0 5vh;
+    height: 100%;
+    overflow: hidden;
+    justify-items: center;
+    position: relative;
+}
+
+.item:nth-child(odd) {
+    margin-top: 0px;
+}
+
+.tile {
+    border-radius: 300% 30% 30% 30%;
+    height: 20em;
+    width: auto;
+    background-color: #FCB415;
+    position: relative;
+}
+
+.item:nth-child(even) .tile {
+    background-color: #FCEE22;
+}
+
+.item:nth-child(4n) .tile {
+    background-color: #91CFA7;
+}
+
+.item:nth-child(3n) .tile {
+    background-color: #F7BAD5;
+}
+
+.design {
+    max-height: 18em;
+    max-width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+#eel {
+    max-width: 90vw;
+    transform: translate3d(-50%, 10%, 0);
+}
+
+#flounder {
+    max-width: 90vw;
+    transform: translate3d(-50%, 40%, 0);
+}
+
+#harpoon {
+    max-width: 35em;
+    transform: translate3d(-50%, 20%, 0);
+}
+
+.name {
+    justify-content: start;
+    margin: 0.5em 0 0;
+    font-size: 2em;
+    color: #013F45;
+    font-family: "Josefin Sans";
+    font-weight: bolder;
+    /* text-transform: uppercase; */
+}
+
+.subtitle {
+    justify-content: start;
+    margin: 0;
+    text-transform: uppercase;
+    color: #013F45;
+    font-size: 0.85em;
+    letter-spacing: 0.215em;
+    font-family: "Josefin Sans";
+}
+
+.description {
+    display: none;
+    font-family: "Josefin Sans";
+    font-size: 1em;
+    color: #013F45;
+    z-index: 2;
+    grid-row: 5/6;
+}
+
+.detail_highlight {
+    display: none;
+    justify-self: center;
+    align-items: center;
+    grid-row: 4/5;
+    font-family: "Josefin Sans";
+    font-size: 1.5em;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #013F45;
+    z-index: 2;
+}
+
+.item_adjust {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 2;
+    grid-template-rows: 50vh 10vh 10vh 10vh 20vh;
+}
+
+.tile_adjust {
+    width: 100vw;
+    position: fixed;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    background-color: #FCB415;
+}
+
+/* .grid_adjust {
+    display: grid;
+    margin: 0;
+    justify-items: center;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+} */
+
+.name_adjust {
+    justify-self: flex-start;
+    grid-row: 2/3;
+    font-size: 2em;
+    color: #013F45;
+    font-family: "Josefin Sans";
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.subtitle_adjust {
+    justify-self: flex-start;
+    margin: 0;
+    grid-row: 3/4;
+    text-transform: uppercase;
+    color: #013F45;
+    font-size: 0.85em;
+    letter-spacing: 0.215em;
+    font-family: "Josefin Sans";
+    z-index: 2;
+}
+
+.design_adjust {
+    position: static;
+    justify-self: center;
+    align-self: center;
+    max-width: 80%;
+    height: auto;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+    position: fixed;
+    top: 5%;
+    left: 15%;
+}
+
+.horizontal_adjust {
+    position: static;
+    align-self: center;
+    max-width: 20em;
+    height: auto;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.btn {
+    display: none;
+}
+
+.exit {
+    display: block;
+    color: #013F45;
+    background-color: white;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+
+.skip {
+    position: absolute;
+    top: -200px;
+    left: -400px;
+}
+
+.skip:focus {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    text-align: right;
+    font-size: 40px;
+    position: relative;
+}
+
+h1{
+    font-family: "Delicious Handrawn", serif;
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 80px;
+    color: #013F45;
+}
+
+
+.grid {
+    margin: 10em auto 7em;
+    position: relative;
+    padding: 0 1em;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.item {
+    padding: 0 4vw;
+    margin: 0 0 12vh;
+    height: 100%;
+    padding-top: 10em;
+    position: relative;
+}
+
+
+.item:nth-child(odd) {
+    margin-top: -10em;
+}
+
+.tile {
+    border-radius: 50% 50% 0 0;
+    height: 20em;
+    width: auto;
+    background-color: #FCB415;
+    position: relative;
+}
+
+.item:nth-child(even) .tile {
+    background-color: #FCEE22;
+}
+
+.item:nth-child(4n) .tile {
+    background-color:  #91CFA7;
+}
+
+.item:nth-child(3n) .tile {
+    background-color: #F7BAD5;
+}
+
+.design {
+    max-height: 25em;
+    max-width: 30em;
+    height: auto;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0px;
+
+    transform: translate3d(-50%, 15%, 0);
+}
+
+#eel {
+    max-width: 35em;
+    transform: translate3d(-50%, 40%, 0);
+}
+
+#flounder {
+    max-width: 30em;
+    transform: translate3d(-50%, 90%, 0);
+}
+
+#harpoon {
+    max-width: 35em;
+    transform: translate3d(-50%, 20%, 0);
+}
+
+.name {
+    position: relative;
+    margin: 0.5em 0 0;
+    font-size: 2em;
+    color: #013F45;
+    font-family:"Josefin Sans";
+    font-weight: bolder;
+    /* text-transform: uppercase; */
+}
+
+.subtitle {
+    position: relative;
+    margin: 0;
+    text-transform: uppercase;
+    color: #013F45;
+    font-size: 0.85em;
+    letter-spacing: 0.215em;
+    font-family: "Josefin Sans";
+}
+
+.description {
+    display: none;
+    width: 30vw;
+    justify-self: end;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.detail_highlight {
+    display: none;
+    width: 30vw;
+    justify-self: end;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #013F45;
+}
+
+.item_adjust{
+    display: flex;
+    width: 90vw;
+    /* flex-direction: column;
+    align-content: flex-end; */
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+    /* position: relative; */
+    background-color: white;
+    z-index: 2;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    margin-top: -10em;
+    grid-template-rows: 50vh 5vh 20vh 10vh ;
+}
+
+.tile_adjust{
+    width: 100vw;
+    position: fixed;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    height: 50vh;
+    background-color: #FCB415;
+}
+
+.name_adjust{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+    justify-self: flex-end;
+    font-size: 2em;
+    color: #013F45;
+    font-family: "Josefin Sans";
+    font-weight: bolder;
+    z-index: 2;
+    align-self: end;
+}
+
+.subtitle_adjust{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    justify-self: flex-end;
+    margin: 0;
+    text-transform: uppercase;
+    color: #013F45;
+    font-size: 0.85em;
+    letter-spacing: 0.215em;
+    font-family: "Josefin Sans";
+    z-index: 2;
+    align-self: end;
+}
+
+.design_adjust{
+    grid-column: 1 / 2;
+    grid-row: 1 / span 5;
+    max-width: 50vw;
+    max-height: 70vh;
+    /* height: auto; */
+    margin: 0;
+    position: fixed;
+    left: 30%;
+}
+
+.horizontal_adjust {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 5;
+    max-width: 30em;
+    height: auto;
+    margin: 0;
+    position: fixed;
+    top: 200%;
+    left: 30%;
+}
+
+.design_adjust:hover {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-delay: .1s;
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    display: none;
+}
+
+.exit {
+    display: block;
+    color: #013F45;
+    background-color: white;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.hidden {
+    display: none;
+}
+}
+
+
+/* @keyframes grow {
+    from {
+        height: auto;
+    }
+    to {
+        height: ;
+    }
+} */
